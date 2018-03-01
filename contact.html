@@ -3,38 +3,52 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact Me</title>
+    <title>Carrering's PortfoLoLio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
 <body>
     <header>
-        <h1>James Chambbers</h1>
-        <div>About</div>
-        <div>Portfolio</div>
-        <div>Contact</div>
+        <div class="whitebox">
+            <h1>
+                <div class="namebox">James Chambers</div>
+            </h1> 
+            <div class="navbar">
+                <a href="index.html">About</a> &nbsp; | &nbsp; <a href="portfolio.html">Portfolio</a> &nbsp; | &nbsp; <a href="contact.html">Contact</a>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="contactme">
-            <h1>Contact</h1>
-            <hr>
-            <div class="form">Name</div>
-            <div class="form">Email</div>
-            <div class="form">Message</div>
-            <div class="button">Submit</div>
-        </div>
-        <div class="connectwithme">
-            <h2>Connect with Me</h2>f
-            <hr>
-            <a href="https://carrering.github.io"><img src="./assets/images/octocat.png" alt="github"></a>
-            <a href="https://www.linkedin.com/in/carrering/"><img src="./assets/images/linkedin.png" alt="linkedin"></a>
-            <a href="http://www.stackexchange.com"><img src="./assets/images/stackoverflow.png" alt="stack overflow"></a>
-        </div>
+<hr class="mainhr">       
+ <div class="entire_content_area">
+   
+    <div class="main_content">
+        <h1>Contact</h1>
+        <hr class="subhr">
+        <form action="post">
+            Name<br>
+            <input type="text" id="name" placeholder="John Smith" name="name"><br>
+            Email<br>
+            <input type="text" id="email" placeholder="example@gmail.com" name="email"><br>
+            Message<br>
+            <textarea id="subject" name="subject" style="height:200px"></textarea>            
+            <input type="submit" value="Submit">
+        </form>
+       
+    </div>
+    <div class="sidebar">
+        <h2>Connect with Me</h2>
+        <hr class="subhr">
+        <br>
+        <a href="https://carrering.github.io"><img src="./assets/images/octocat.png" alt="github" class="icon"></a>
+        <a href="https://www.linkedin.com/in/carrering/"><img src="./assets/images/linkedin.png" alt="linkedin" class="icon"></a>
+        <a href="http://www.stackexchange.com"><img src="./assets/images/stackoverflow.png" alt="stack overflow" class="icon"></a>
+    </div>
+ </div>
     </main>
     <footer>
-        <div class="greenline"></div>
-        <div class="greybox">C Copyright 2018 James Chambers</div>
+        <div class="greybox">&copy; Copyright 2018 James Chambers</div>
     </footer>
 </body>
 </html>
